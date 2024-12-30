@@ -1,42 +1,62 @@
 .header-container {
 	display: flex;
-	height: 150px;
+	height: 100px;
 	width: 100%;
 
 	padding-top: 10px;
-
 	background-color: #ffffff;
 	color: #000000;
 	text-align: center;
 }
+
+header img {
+	height: 90px;
+	margin: 4px;
+}
 header nav {
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: center;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 }
+
 header nav ul {
 	display: flex;
+	justify-content: center;
+
 	list-style-type: none;
-	font-family: "Helvetica Neue Thin";
+	font-family: "Helvetica Neue";
 	font-weight: 100;
+
+	width: 100%;
 	margin: 0;
 	padding: 0;
 }
 
-header img {
-	height: 140px;
-	margin: 4px;
-}
-
-header nav ul li {
-	margin-right: 40px;
-}
 
 header nav ul li a {
 	text-decoration: none;
 	color: #000;
-	font-size: 32px;
+	font-size: 20px;
+	margin-left: 60px;
+}
+
+.header-button {
+	display: flex;
+	white-space: nowrap;
+	border: solid;
+	border-radius: 20px;
+	border-width: 1px;
+	border-color: #000000;
+	margin-right: 40px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+	header nav {
+			display: none;
+	}
 }

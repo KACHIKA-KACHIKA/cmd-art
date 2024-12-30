@@ -10,22 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
-	<link rel="stylesheet" type="text/css" href="styles/buttons.css">
-	<link rel="stylesheet" type="text/css" href="styles/work.css">
-	<link rel="stylesheet" type="text/css" href="styles/merch.css">
-	<link rel="stylesheet" type="text/css" href="styles/hexagon.css">
 	<link rel="stylesheet" type="text/css" href="styles/footer.css">
 	<title>CMD+ART</title>
-	<script>
-		async function loadContent(id, file) {
-			const response = await fetch(file);
-			const content = await response.text();
-			document.getElementById(id).innerHTML = content;
-		}
-		window.onload = () => {
-			loadContent("section-work", "works.html");
-		};
-	</script>
 </head>
 
 <body>
@@ -33,200 +19,138 @@
 		<img src="images/favicon.ico" alt="Логотип">
 		<nav>
 			<ul>
-				<li><a href="#">О нас</a></li>
-				<li><a href="#">Услуги</a></li>
-				<li><a href="#">Портфолио</a></li>
-				<li><a href="#">Мерч</a></li>
+				<li><a href="#">О НАС</a></li>
+				<li><a href="#">КОМАНДА</a></li>
+				<li><a href="#">ПОРТФОЛИО</a></li>
+				<li><a href="#">КОНТАКТЫ</a></li>
+				<li><a href="#">CLIP CLUB</a></li>
 			</ul>
+			<div><a class="header-button" href="#">ОСТАВИТЬ ЗАЯВКУ</a></li>
+			</div>
 		</nav>
 	</header>
 	<main>
-		<div class="hexagon-container"></div>
 		<section class="section-block">
 			<article class="banner-block">
-				<div class="banner-photo">
-					<img src="images/welcome.png" alt="Заставка">
-				</div>
-				<div class="banner-text" style="justify-content: flex-end;">
-					<h2 class="text-head" style="	border-top-color: #010101;	border-top-style: solid;	border-top-width: 2px;">Мы в
-						социальных сетях</h2>
-					<nav>
-						<ul>
-							<li><a href="#">Вконтакте</a></li>
-							<li><a href="#">Телеграм</a></li>
-							<li><a href="#">Тикток</a></li>
-						</ul>
-					</nav>
+				<div class="banner-text">
+					<h1>ЗАХОЧЕТСЯ<br>
+						СОХРАНИТЬ<br>
+						НАВСЕГДА</h1>
+					<h2>Мы нажимаем ⌘ - вы получаете ART </h2>
 				</div>
 			</article>
 		</section>
 
-		<section class="space-section-block">
-			<div class="rotated-text">О нас</div>
-		</section>
+		<div class="section-name-text">НАШИ<br>
+			РАБОТЫ</div>
 
 		<section class="section-block">
-			<div class="text-about" style="background-color: #000000;">
-				<h2 class="text-head" style="color: white; padding: 0;">Мы создаем</h2>
-				<h3 style="color: white;">уникальные и качественные дизайны, которые помогут вашему проекту выделиться среди
-					остальных.</h3>
-			</div>
-			<div class="text-about" style="
-					border-top: 2px solid #010101;
-					border-bottom: 2px solid #010101;">
-				<h2 class="text-head" style="padding: 0;">Мы учитываем</h2>
-				<h3>все аспекты вашего проекта, чтобы обеспечить максимальную удовлетворенность результатом.</h3>
-			</div>
-			<div class="text-about" style="background-color: #6642DA; margin-right: 40px;">
-				<h2 class="text-head" style="color: white; padding: 0;">Наша команда</h2>
-				<h3 style="color: white;">— это настоящие профессионалы, каждый
-					из которых обладает уникальными навыками
-					и знаниями. </h3>
-			</div>
+			<article class="banner-block">
+				<div class="works-container">
+					<img src="images/Namespace.jpg" style="display: block; width: 70%;" alt="Превью работы">
+					<img src="images/Theatre.png" style="display: block; width: 30%;" alt="Превью работы">
+					<img src="images/Trash.png" style="display: block; width: 70%;" alt="Превью работы">
+					<img src="images/BigIronPiece.png" style="display: block; width: 30%;" alt="Превью работы">
+
+				</div>
+			</article>
 		</section>
 
-		<section class="section-block section-block--spaced">
-			<div class="text-about" style="align-content: flex-end;">
-				<form method="POST" action="">
-					<button type="submit" class="btn-main">Связаться с нами
-					</button>
-				</form>
-			</div>
+		<div class="section-name-text">О НАС</div>
 
-			<div class="text-about" style="width: 34%;">
-				<h3 style="width: 200px; margin-bottom: 0px;">Мы стремимся создавать дизайн, который будет
-					не только визуально привлекательным,
-					но и функциональным.
-					<br>
-					<br>
-					Мы работаем над разными проектами,
-					от мелких до крупных.
-				</h3>
-			</div>
+		<section class="section-block" style="background-color: #000000;">
+			<article class="banner-block">
+				<div style="display: flex; width: 100%; justify-content: center;">
+					<h4 style="font-size: 24px;">CMD + ART</h4>
+					<h4></h4>
+					<h4 style="color: #707070;">Command — это точность, стратегия<br> и контроль на каждом этапе, а Art — это
+						креатив, смелость и эстетика</h4>
+				</div>
+
+				<div class="text-about" style="background-color: #3A3A3A;">
+					<h2>СОЗДАЕМ<br>УНИКАЛЬНОЕ</h2>
+					<h3>Мы превращаем идеи в проекты, которые вдохновляют, работают и выделяются на фоне конкурентов.</h3>
+				</div>
+				<div class="text-about" style="background-color: #BF49FF;">
+					<h2>КРЕАТИВНЫЙ<br>КОЛЛЕКТИВ</h2>
+					<h3>Наша команда — это настоящие профессионалы, каждый из которых обладает уникальными навыками и знаниями. Мы
+						работаем над разными проектами, от мелких до крупных.</h3>
+				</div>
+				<div class="text-about" style="background-color: #3A3A3A;">
+					<h2>ОТ ИДЕИ<br>ДО АЙДЕНТИКИ</h2>
+					<h3>Мы учитываем все аспекты вашего проекта, чтобы обеспечить максимальную удовлетворенность результатом.</h3>
+				</div>
+				<div class="banner-button-container">
+					<div class="button-block"></div>
+					<div class="button-block"></div>
+					<form method="POST" action="" class="button-block">
+						<button type="submit" class="connect-button">Оставить заявку
+						</button>
+					</form>
+				</div>
+			</article>
 		</section>
 
-		<section class="space-section-block">
-			<div class="rotated-text">Услуги</div>
-		</section>
 
 		<section class="section-block">
-			<div class="text-about" style="width: 33%; flex-direction: column;">
-				<h2 class="text-head--underlined">Дизайн логотипа</h2>
-				<h2 class="text-head--underlined">Брендинг</h2>
-				<h2 class="text-head--underlined">Еще дизайн</h2>
-				<h2 class="text-head">Еще какой-то дизайн</h2>
-			</div>
-			<div class="text-about" style="width: 33%;">
-				<h3 style="margin: 0;">Описание услуги описание услуги описание услуги описание услуги описание услуги. Описание
-					услуги описание услуги описание</h3>
-				<h3 style="margin: 0;">Описание услуги описание услуги описание услуги описание услуги описание услуги. Описание
-					услуги описание услуги описание</h3>
-				<h3 style="margin: 0;">Описание услуги описание услуги описание услуги описание услуги описание услуги. Описание
-					услуги описание услуги описание</h3>
-				<h3 style="margin: 0;">Описание услуги описание услуги описание услуги описание услуги описание услуги. Описание
-					услуги описание услуги описание</h3>
-			</div>
-		</section>
+			<article class="banner-block">
+				<div style="display: flex; width: 100%; justify-content: space-between;">
 
-		<section class="space-section-block">
-			<!-- <div class="rotated-text">Наши работы</div> -->
-		</section>
+					<div class="section-name-text">ОСТАВИТЬ<br>ЗАЯВКУ</div>
+					<h4></h4>
+					<h4 style="color: #707070;">Напишите нам и расскажите о своём проекте.</h4>
+				</div>
 
-		<div class="work-section-header-text">
-			<h1>Наши работы</h1>
-		</div>
-		<section class="section-work" id="section-work">
-		</section>
-
-		<!-- <section class="space-section-block">
-		</section> -->
-
-		<section class="section-block">
-			<article class="merch-section">
-				<h1>МЕРЧ!</h1>
-				<h2>Comming soon</h2>
-				<h3>Я не знаю что тут написать...</h3>
+				<div class="form-container">
+					<form action="#" method="POST" style="display: flex; flex-wrap: wrap; justify-content: flex-end;">
+						<div style="display: block; width: 50%;">
+							<label for="name">Ваше имя</label>
+							<input type="text" id="name" name="name" required>
+						</div>
+						<div style="display: block; width: 50%;">
+							<label for="phone">Ваш телефон</label>
+							<input type="tel" id="phone" name="phone" required>
+						</div>
+						<div style="display: block; width: 200%;">
+							<label for="project">Ваш проект</label>
+							<textarea id="project" name="project"></textarea>
+						</div>
+						<button type="submit">
+							ОТПРАВИТЬ →
+						</button>
+					</form>
+				</div>
 			</article>
 		</section>
 	</main>
 	<footer class="footer">
 		<div class="footer__addr">
-			<h1 class="footer__logo">CMD+ART</h1>
+			<ul class="footer__nav">
 
-			<h2>Contact Us</h2>
-			<h3>+7 000-00-00</h3>
-			<h3>С 10:00 до 17:00</h3>
+				<li class="nav__item">
+					<ul class="nav__ul">
+						<li><a href="#">О НАС</a></li>
+						<li><a href="#">КОМАНДА</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
 
-			<address>
-				<a class="footer__btn" href="mailto:cmdart@gmail.com">Email</a>
-			</address>
-		</div>
+					<ul class="nav__ul nav__ul--extra">
+						<li><a href="#">ПОРТФОЛИО</a></li>
+						<li><a href="#">КОНТАКТЫ</a></li>
+					</ul>
+				</li>
+				<div style="display: flex; width: 100%; justify-content: flex-end;">
+					<img src="images/Isolation_Mode.png" alt="Логотип" style="display: block;height: 90px;margin: 4px;">
+				</div>
+			</ul>
 
-		<ul class="footer__nav">
-			<li class="nav__item">
-				<h2 class="nav__title">Media</h2>
-				<ul class="nav__ul">
-					<li><a href="#">Вконтакте</a></li>
-					<li><a href="#">Телеграм</a></li>
-					<li><a href="#">Тикток</a></li>
-				</ul>
-			</li>
+			<div class="legal" style="display: flex; gap: 10px;">
+				<img src="images/vk_icon.svg" alt="svg_icon_vk">
+				<img src="images/telegram_icon.svg" alt="svg_icon_tg">
 
-			<li class="nav__item">
-				<h2 class="nav__title">Navigation</h2>
-
-				<ul class="nav__ul nav__ul--extra">
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Услуги</a></li>
-					<li><a href="#">Портфолио</a></li>
-					<li><a href="#">Мерч</a></li>
-				</ul>
-			</li>
-		</ul>
-		<div class="legal">
-			<p>&copy; @ 2024, дизайн-студия “CTRL+ART”</p>
-		</div>
+			</div>
 	</footer>
 </body>
-<script>
-	const section = document.querySelector('.merch-section');
-	['left', 'right'].forEach(side => {
-		const textElement = document.createElement('div');
-		textElement.className = 'border-text';
-		textElement.style[side] = '0';
-
-		if (side === 'right') {
-			textElement.style.transform = 'rotate(180deg)';
-			textElement.style.transformOrigin = 'center center';
-			textElement.style[side] = '-14px';
-		}
-
-		textElement.textContent = 'Мерч! '.repeat(10);
-		section.appendChild(textElement);
-	});
-
-
-	function placeHexagons() {
-		const container = document.querySelector('.hexagon-container');
-
-		const hexagons = [
-			{ left: '54vw', top: '50vh', size: 380, rotation: 60 },
-		];
-		hexagons.forEach(settings => {
-			const hexagon = document.createElement('div');
-			hexagon.className = 'hexagon';
-
-			hexagon.style.left = settings.left;
-			hexagon.style.top = settings.top;
-			hexagon.style.width = `${settings.size}px`;
-			hexagon.style.height = `${settings.size}px`;
-			hexagon.style.transform = `rotate(${settings.rotation}deg)`;
-
-			container.appendChild(hexagon);
-		});
-	}
-	placeHexagons();
-
-</script>
 
 </html>

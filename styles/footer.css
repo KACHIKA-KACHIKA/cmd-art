@@ -2,7 +2,7 @@
   display: flex;
 	width: 100%;
   flex-flow: row wrap;
-  padding: 30px 30px 20px 30px;
+  /* padding: 30px 30px 20px 30px; */
   color: #ffffff;
   background-color: #000000;
   border-top: 1px solid #e5e5e5;

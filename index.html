@@ -9,26 +9,16 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
+	<link rel="stylesheet" type="text/css" href="styles/burger-menu.css">
+	<link rel="stylesheet" type="text/css" href="styles/cubes.css">
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 	<link rel="stylesheet" type="text/css" href="styles/footer.css">
 	<title>CMD+ART</title>
+	<script src="scripts/include.js" defer></script>
 </head>
 
 <body>
-	<header class="header-container">
-		<img src="images/favicon.ico" alt="Логотип">
-		<nav>
-			<ul>
-				<li><a href="#">О НАС</a></li>
-				<li><a href="#">КОМАНДА</a></li>
-				<li><a href="#">ПОРТФОЛИО</a></li>
-				<li><a href="#">КОНТАКТЫ</a></li>
-				<li><a href="#">CLIP CLUB</a></li>
-			</ul>
-			<div><a class="header-button" href="#">ОСТАВИТЬ ЗАЯВКУ</a></li>
-			</div>
-		</nav>
-	</header>
+	<div style="width: 100%;" data-include="header.html"></div>
 	<main>
 		<section class="section-block">
 			<article class="banner-block">
@@ -36,6 +26,10 @@
 					<h1>ЗАХОЧЕТСЯ<br>
 						СОХРАНИТЬ<br>
 						НАВСЕГДА</h1>
+					<img src="images/cubes/cube_prpl.png" alt="Кубик 1" class="cube cube-1">
+					<img src="images/cubes/cmd_cube.png" alt="Кубик 2" class="cube cube-2">
+					<img src="images/cubes/cube_green.png" alt="Кубик 3" class="cube cube-3">
+					<img src="images/cubes/cube_prpl.png" alt="Кубик 4" class="cube cube-4">
 					<h2>Мы нажимаем ⌘ - вы получаете ART </h2>
 				</div>
 			</article>
@@ -44,11 +38,15 @@
 		<div class="section-name-text">НАШИ<br>
 			РАБОТЫ</div>
 
-		<section class="section-block">
+		<section id="about-us" class="section-block">
 			<article class="banner-block">
 				<div class="works-container">
-					<img src="images/Namespace.jpg" style="display: block; width: 70%;" alt="Превью работы">
-					<img src="images/Theatre.png" style="display: block; width: 30%;" alt="Превью работы">
+					<a style="width: 70%;" href="RKN.html">
+						<img src="images/Namespace.jpg" alt="Превью работы">
+					</a>
+					<a style="width: 30%;" href="Camala.html">
+						<img src="images/Theatre.png" alt="Превью работы">
+					</a>
 					<img src="images/Trash.png" style="display: block; width: 70%;" alt="Превью работы">
 					<img src="images/BigIronPiece.png" style="display: block; width: 30%;" alt="Превью работы">
 
@@ -56,7 +54,9 @@
 			</article>
 		</section>
 
-		<div class="section-name-text">О НАС</div>
+		<div class="section-name-text">О НАС
+			<img src="images/cubes/cube_green.png" alt="Кубик 5" class="cube cube-5">
+		</div>
 
 		<section class="section-block" style="background-color: #000000;">
 			<article class="banner-block">
@@ -92,17 +92,18 @@
 		</section>
 
 
-		<section class="section-block">
+		<section id="contact" class="section-block">
 			<article class="banner-block">
 				<div style="display: flex; width: 100%; justify-content: space-between;">
 
-					<div class="section-name-text">ОСТАВИТЬ<br>ЗАЯВКУ</div>
+					<div class="section-name-text">ОСТАВИТЬ<br>ЗАЯВКУ
+						<img src="images/cubes/cube_prpl.png" alt="Кубик 6" class="cube cube-6"></div>
 					<h4></h4>
 					<h4 style="color: #707070;">Напишите нам и расскажите о своём проекте.</h4>
 				</div>
 
 				<div class="form-container">
-					<form action="#" method="POST" style="display: flex; flex-wrap: wrap; justify-content: flex-end;">
+					<form action="/" method="POST" style="display: flex; flex-wrap: wrap; justify-content: flex-end;">
 						<div style="display: block; width: 50%;">
 							<label for="name">Ваше имя</label>
 							<input type="text" id="name" name="name" required>
@@ -123,34 +124,8 @@
 			</article>
 		</section>
 	</main>
-	<footer class="footer">
-		<div class="footer__addr">
-			<ul class="footer__nav">
-
-				<li class="nav__item">
-					<ul class="nav__ul">
-						<li><a href="#">О НАС</a></li>
-						<li><a href="#">КОМАНДА</a></li>
-					</ul>
-				</li>
-				<li class="nav__item">
-
-					<ul class="nav__ul nav__ul--extra">
-						<li><a href="#">ПОРТФОЛИО</a></li>
-						<li><a href="#">КОНТАКТЫ</a></li>
-					</ul>
-				</li>
-				<div style="display: flex; width: 100%; justify-content: flex-end;">
-					<img src="images/Isolation_Mode.png" alt="Логотип" style="display: block;height: 90px;margin: 4px;">
-				</div>
-			</ul>
-
-			<div class="legal" style="display: flex; gap: 10px;">
-				<img src="images/vk_icon.svg" alt="svg_icon_vk">
-				<img src="images/telegram_icon.svg" alt="svg_icon_tg">
-
-			</div>
-	</footer>
+	<div style="width: 100%;" data-include="footer.html"></div>
 </body>
+
 
 </html>
